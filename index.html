@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Hi! If you are inspecting this website's code, it means you are probably interested in knowing how did I end up doing it. I am not a web developer, but if you are interested in coding, then building a website like this should take too long. What I used for my personal website was Bootstrap and some JS code I found online, but if you would like to talk with me about it, please reach me out in my email with the subject "PERSONAL WEBSITE - QUESTION" so I know you would like to get some inspiration!  -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lucas Belvedere</title>
+	<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/aos.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/line-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example">
+	<!-- NAVBAR -->
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+	  <div class="container flex-lg-column">
+	    <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
+	    	<span class="h3 fw-bold d-block d-lg-none" >Lucas Belvedere</span>
+	    	<img src="./assets/images/photo.jpeg" class="d-none d-lg-block rounded-circle">
+	    </a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarNav">
+	      <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="#home">Home</a>
+	        </li>
+
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="#Projects">Projects</a>
+	        </li>
+
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="#about">About</a>
+	        </li>
+
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="#about">Contact</a>
+	        </li>
+
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+	<!-- END OF NAVBAR -->
+
+	<!-- CONTENT -->
+	<div id="content-wrapper">
+		<!-- HOME -->
+		<section id="home" class="full-height bg-dark px-lg-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8">
+						<h1 class="display-4 fw-bold">COMPUTER SCIENTIST FROM LA</h1>
+						<p class="lead mt-2 mb-4">My name is Lucas Belvedere, and I am a computer scientist interested in artificial intelligence and intelligent systems, algorithms, and robotics!</p>
+						<a href="#Projects" class="btn btn-brand me-3">My Projects</a>
+						<a href="#" class="link-custom">Call: +1 (310) 990-3141</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END OF HOME -->
+
+		<!-- PROJECTS -->
+		<section id="Projects" class="full-height px-lg-5">
+			<div class="container">
+
+				<div class="row pb-4">
+					<div class="col-lg-8">
+						<h5>Projects</h5>
+						<h1>Projects I have worked on</h1>
+					</div>
+				</div>
+
+				<div class="row">
+
+						<div class="col-md-4">
+							<div class="project p-4 bg-base rounded-4 shadow-effect">
+								<div class="iconbox rounded-4">
+									<i class="las la-file-code"></i>
+								</div>
+								<h4 class="mt-3 mb-2">Interference Graph</h4>
+								<p>Implemented an interference graph by using an adjacency list to add and remove vertices and edges. The graph data structure was utilized to solve for the second part of this project: To register allocations correctly.</p>
+								<a href="#" class="link-custom">View Code</a>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="project p-4 bg-base rounded-4 shadow-effect">
+								<div class="iconbox rounded-4">
+									<i class="las la-file-code"></i>
+								</div>
+								<h4 class="mt-3 mb-2">Word Ladder Solver</h4>
+								<p>C++ project that uses a priority queue and an algorithm that is based on Dijkstra's shortest path, to find a possible path between two words. Words must be included in words.txt (including the ones in the path you want to find.)</p>
+								<a href="#" class="link-custom">View Code</a>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="project p-4 bg-base rounded-4 shadow-effect">
+								<div class="iconbox rounded-4">
+									<i class="las la-file-code"></i>
+								</div>
+								<h4 class="mt-3 mb-2">Alphametics Solver</h4>
+								<p>C++ project that uses recursion and std data structures to find possible solutions for alphametics puzzles and check if they are valid solutions.</p>
+								<a href="#" class="link-custom">View Code</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END OF PROJECTS -->
+
+	</div>
+	<!-- END OF CONTENT -->
+
+
+	<!-- JAVASCRIPT -->
+	<script type="text/javascript" src="./assets/js/bootstrap.bundle.js"></script>
+	<script type="text/javascript" src="./assets/js/main.js"></script>
+	<script type="text/javascript" src="./assets/js/aos.js"></script>
+	<!-- END OF JAVASCRIPT -->
+</body>
+</html>

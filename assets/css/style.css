@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+:root {
+	--color-body: #BBC2E2;
+	--color-heading: #E84855;
+	--color-base: #0F1020;
+	--color-base2: #F1F6F5;
+	--color-brand: #E84855;
+	--color-brand2: #333745;
+	--sidbar-width: 240px;
+	--font-base:"Righteous";
+}
+
+body{
+	background-color: var(--color-base2);
+	color: var(--color-body);
+	font-family: var(--font-base), sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+	color: var(--color-heading);
+	font-weight: 700px;
+}
+
+a{
+	text-decoration: none;
+	color: var(--color-body);
+	transition: all 0.4s ease;
+}
+
+a:hover {
+	color: var(--color-brand);
+}
+
+img {
+	width: 100px;
+}
+
+.text-brand {
+	color: var(--color-brand);
+}
+
+.bg-base {
+	background-color: var(--color-base);
+}
+
+.full-height {
+	min-height: 100vh;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.shadow-effect {
+	transition: all 0.5s;
+}
+
+.shadow-effect:hover {
+	box-shadow: -6px 6px 0 0 var(--color-brand);
+}
+
+.iconbox {
+	width: 60px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 32px;
+	background-color: var(--color-brand);
+	color: var(--color-base);
+}
+
+/* Navbar */
+.navbar {
+	background-color: var(--color-base);
+}
+
+.navbar .nav-link {
+	font-weight: 700;
+	text-transform: uppercase;
+	color: white;
+}
+
+.navbar .nav-link:hover {
+	color: var(--color-brand);
+}
+
+.navbar .nav-link.active {
+	color: var(--color-brand);
+}
+
+@media (min-width: 992px) {
+	.navbar {
+		min-height: 100vh;
+		width: var(--sidbar-width);
+		background: linear-gradient(rgba(3, 29, 68, 0.6), rgba(3, 29, 68, 0.6)), url(../images/sidebar.jpg);
+		background-size: cover;
+/*		background-position: center; */
+	}
+
+	.navbar-brand img {
+		border: 8px solid var(--color-brand);
+	}
+
+	/* Content-Wrapper */
+	#content-wrapper {
+		padding-left: var(--sidbar-width);
+	}
+}
+
+/* Buttom */
+.btn {
+	padding: 12px 28px;
+	font-weight: 700px;
+}
+
+.btn-brand {
+	background-color: var(--color-brand);
+	border-color: var(--color-brand);
+	color: var(--color-base);
+}
+
+.btn-brand:hover, .btn-brand:focus {
+	background-color: var(--color-brand2);
+	border-color: var(--color-brand2);
+	color: var(--color-base);
+}
+
+.link-custom {
+	font-weight: 700;
+	position: relative;
+}
+
+.link-custom::after {
+	content: "";
+	width: 0%;
+	height: 2px;
+	background-color: var(--color-brand);
+	position: absolute;
+	left: 0;
+	top: 110%;
+	transition: all 0.4s;
+}
+
+.link-custom:hover::after {
+	width: 100%;
+}
